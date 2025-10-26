@@ -35,15 +35,21 @@ p {
   line-height: 1.3rem;
   letter-spacing: 1px;
   margin: 15px 0;
-  font-size: .8rem;
+  
 }
 
 section {
-  padding: 120px 10px;
+  padding: 80px 10px;
 }
 
 .section-header__title {
-  text-transform: uppercase;
+//   text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  
+  @media (min-width: variables.$mqMinWidthDesktop) {
+    font-size: 4rem;
+  }
 }
 
 section a {
@@ -71,6 +77,10 @@ a.button {
   display: inline-block;
   padding: 10px 20px;
   font-size: .8rem;
+}
+a.button:hover {
+  background-color: variables.$seconday;  
+  transition: .5s;
 }
 
 .inner-container {
