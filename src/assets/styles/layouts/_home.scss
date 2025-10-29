@@ -279,7 +279,7 @@
     grid-column: span 2;
   }
 
-  li:nth-of-type(4){
+  li:last-of-type{
     grid-column: span 2;
   }
 
@@ -299,54 +299,80 @@
   @media (min-width: variables.$mqMinWidthTablet) {
     grid-template-columns: repeat(6, 1fr);
     li:first-of-type {
-      grid-column: span 3;
+      grid-column: span 2;
     }
     li:nth-of-type(2){
-      grid-column: span 3;
+      grid-column: span 2;
       grid-row: span 2;
     }
      li:nth-of-type(3){
-      grid-column: span 3;
+      grid-column: span 2;
       grid-row: span 2;
      
     }
 
     li:nth-of-type(4){
-      grid-column: span 3;
+      grid-column: span 2; 
     }
      li:nth-of-type(5){
-      grid-column: span 4;
+      grid-column: span 3;
     }
      li:nth-of-type(6){
+      grid-column: span 3;
+    }
+     li:nth-of-type(7){
       grid-column: span 2;
+      grid-row: span 2;
+    }
+    li:nth-of-type(8){
+      grid-column: span 2;
+    }
+    li:nth-of-type(9){
+      grid-column: span 2;
+    }
+    li:last-of-type {
+      grid-column: span 4;
     }
     
   }
   @media (min-width: variables.$mqMinWidthDesktop) {
     grid-template-columns: repeat(12, 1fr);
     li:first-of-type {
-      grid-column: span 5;
-      grid-row: span 2;
+      grid-column: span 4;
     }
     li:nth-of-type(2){
-      grid-column: span 4;
+      grid-column: span 3;
       grid-row: span 2;
     }
      li:nth-of-type(3){
-      grid-column: span 3;
+      grid-column: span 5;
       grid-row: span 2;
      
     }
 
     li:nth-of-type(4){
-      grid-column: span 3;
-    }
-     li:nth-of-type(5){
-      grid-column: span 5;
+      grid-column: span 4; 
        grid-row: span 2;
     }
+     li:nth-of-type(5){
+      grid-column: span 3;
+    }
      li:nth-of-type(6){
+      grid-column: span 5;
+      grid-row: span 2;
+    }
+     li:nth-of-type(7){
+      grid-column: span 3;
+      grid-row: span 2;
+    }
+    li:nth-of-type(8){
       grid-column: span 4;
+    }
+    li:nth-of-type(9){
+      grid-column: span 4;
+    }
+    li:last-of-type {
+      grid-column: span 5;
     }
     
   }
