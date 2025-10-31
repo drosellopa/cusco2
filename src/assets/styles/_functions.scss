@@ -1,0 +1,5 @@
+//Color functions
+
+@function transparentize-primary($opacity: 0.2) {
+  @return color.change(variables.$primary, $alpha: $opacity);
+}

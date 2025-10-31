@@ -1,6 +1,8 @@
 @use "variables";
+@use "functions";
 
 /* RESET*/
+
 
 * {
   box-sizing: border-box;
@@ -14,6 +16,8 @@ fieldset, legend {
   margin: 0;
   padding: 0;
 }
+
+
 /* GLOBAL */
 html {
   scroll-behavior: smooth;
@@ -77,10 +81,12 @@ a.button {
   display: inline-block;
   padding: 10px 20px;
   font-size: .8rem;
-}
-a.button:hover {
-  background-color: variables.$seconday;  
-  transition: .5s;
+
+  &:hover {
+    background-color: rgba(variables.$primary, .8);
+    transition: .5s;
+  } 
+
 }
 
 .inner-container {
