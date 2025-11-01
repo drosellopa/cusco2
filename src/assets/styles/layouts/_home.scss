@@ -2,6 +2,8 @@
 
 @use "../global";
 
+@use "../footer";
+
 /* ************************* *\
           HOME BANNER
 \* ************************* */
@@ -108,7 +110,7 @@
     border-bottom: 1px solid black;
     text-align: center;
     transition: .5s;
-    &__link {
+    .main-menu__link {
       padding: 15px 0;
       display: block;
       text-decoration: none;
@@ -142,7 +144,7 @@
     .main-menu__item { 
       border-bottom: initial;      
       transition: initial;
-      &__link {
+      .main-menu__link {
           padding: initial;
           display: block;      
           color: #fff;

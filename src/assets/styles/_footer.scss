@@ -2,4 +2,10 @@
 footer {
     padding: 50px 10px;
     text-align: center;
+    a {
+        color: variables.$primary;
+        &:hover {
+            color: rgba(variables.$primary, .8);
+        }
+    }
 }
